@@ -1,0 +1,484 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+header .top-bar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 15px;
+}
+
+header .top-bar h1{
+    font-size: 45px;
+    position: relative;
+    right: 70px;
+    color: #3d464d;
+
+}
+
+header .top-bar #mart{
+    color: yellow;
+    background-color: #3d464d;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header .top-bar input{
+    width: 500px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    right: 30px;
+    padding-left: 20px;
+    font-size: 17px;
+    border:1px solid #3d464d;
+    border-radius: 5px;
+}
+
+header .top-bar input{
+    outline-color: yellow;
+    
+}
+
+header .top-bar h3{
+    color: #3d464d;
+    position: relative;
+    left: 50px;
+    top: 5px;
+}
+
+header .nav-bar{
+    width: 100%;
+    height: 70px;
+    background-color: #3d464d;
+    position: relative;
+    top: 20px;
+}
+
+header .nav-bar nav{
+    width:58%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    left: 550px;
+    top: 20px;
+}
+
+header .nav-bar a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 450;
+
+}
+header .nav-bar a:hover{
+    color: yellow;
+}
+
+header .nav-bar .category{
+    width: 200px;
+    position: relative;
+    right: 530px;
+    top: -20px;
+    background-color: yellow;
+}
+header .nav-bar .category:hover{
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),yellow;
+}
+
+header .nav-bar .category a{
+    color: #3d464d;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+.dropdown{
+    display: none;
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 180px;
+    z-index: 1;
+    margin-top: 50px;
+  }
+  
+  /* Inside Dropdown */
+  .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+ .category .dropdown:hover {
+     background-color:white;
+    }
+
+.category:hover .dropdown{
+    display: block;
+    }
+
+.category:hover #category {
+    background-color: #3d464d;
+    }
+
+.category .dropdown a:hover{
+    color: yellow;
+}
+
+/* TOP - BAR AND THE NAV - BAR ENDS HERE */
+
+/* BANNER STARTS HERE */
+
+.banner{
+    width: 100%;
+    height: 76%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+
+.banner .slider{
+    width: 65%;
+    height: 90%;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url("./img/men.jpg");
+    background-size: 100% 100%;
+    margin-top: 24px;
+    color: white;
+    text-align: center;
+}
+
+.banner .slider h1{
+    margin-top: 130px;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.banner .slider p{
+    font-weight: 600;
+}
+
+.banner .slider button{
+    padding: 10px;
+    width: 110px;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 17px;
+    font-weight: 500;
+    transition-duration: 1s;
+}
+.banner .slider button:hover{
+    color: black;
+    background-color: yellow;
+}
+
+.banner .right-top-box{
+    width: 30%;
+    height: 43%;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url("./img/mobile\ right\ top.jpg");
+    background-size: 100% 100%;
+    margin-top: 24px;
+    color: white;
+    text-align: center;
+}
+.banner .right-top-box h3{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.banner .right-top-box button{
+    padding: 5px;
+    width: 110px;
+    height: 50px;
+    margin-top: 20px;
+    color: black;
+    background-color: yellow;
+    border: 1px solid yellow;
+    font-size: 17px;
+    font-weight: 500;
+    transition-duration: 1s;
+
+}
+.banner .right-top-box button:hover{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.banner .right-bottom-box{
+    width: 30%;
+    height: 43%;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url("./img/ladies\ bag\ right\ bottom.jpg");
+    background-size: 100% 100%;
+    margin-top: 24px;
+    position: relative;
+    bottom: 240px;
+    left: 450px;
+    color: white;
+    text-align: center;
+}
+
+.banner .right-bottom-box h3{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+
+.banner .right-bottom-box button{
+    padding: 5px;
+    width: 110px;
+    height: 50px;
+    margin-top: 20px;
+    color: black;
+    background-color: yellow;
+    border: 1px solid yellow;
+    font-size: 17px;
+    font-weight: 500;
+    transition-duration: 1s;
+
+}
+.banner .right-bottom-box button:hover{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+/* BELOW BANNER AREA STARTS HERE */
+
+main{
+    width: 100%;
+    height: 300vh;
+    color: #3d464d;
+}
+
+main #below-banner{
+    width: 100%;
+    height: 31vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #3d464d;
+    background:linear-gradient(to right, #f8b500, #fceabb);
+}
+
+#below-banner h2{
+    margin-top: 10px;
+}
+
+#below-banner .box1{
+    width: 20%;
+    height: 11vh;
+    background-color: white;
+    margin-top: 60px;
+    text-align: center;
+    
+}
+#below-banner .box2{
+    width: 20%;
+    height: 11vh;
+    background-color: white;
+    margin-top: 60px;
+    text-align: center;
+    
+
+}
+#below-banner .box3{
+    width: 20%;
+    height: 11vh;
+    background-color: white;
+    margin-top: 60px;
+    text-align: center;
+    
+
+}
+#below-banner .box4{
+    width: 20%;
+    height: 11vh;
+    background-color: white;
+    margin-top: 60px;
+    text-align: center;
+    
+
+}
+
+#below-banner i{
+    color: yellow;
+    font-size: 40px;
+    position: relative;
+    top: 5px;
+}
+
+
+
+/* CATEGORIES STARTS HERE */
+
+#categories{
+    width: 100%;
+    height: 125vh;
+    margin-top: 10px;
+}
+
+#categories h1{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#categories .box{
+    width: 24%;
+    height: 55vh;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+#categories .box h2{
+    text-align: center;
+    font-size: 30;
+    margin-top: 10px;
+} 
+
+#categories .box p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+#categories .top-row{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#categories .bottom-row{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 220px;
+}
+#categories .box img{
+    width:100%;
+    height: 60%;
+    border-radius:20px ;
+}
+
+#categories .box button{
+    padding: 5px;
+    background-color: transparent;
+    color: #3d464d;
+    font-size: 20px;
+    position: relative;
+    left: 113px;
+    top: 8px;
+    border: 1px solid black;
+    transition-duration: 1s;
+}
+
+#categories .box button:hover{
+    background-color: yellow;
+}
+/* FEATURED PRODUCTS STARTS HERE */
+
+
+#fproducts{
+    width: 100%;
+    height: 125vh;
+    margin-top: 150px;
+    background:linear-gradient(to right, #fceabb, #f8b500);
+}
+
+#fproducts h1{
+        font-size: 35px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+    
+#fproducts .top-row1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    color: black;
+    margin-top: 20px;
+
+}
+
+#fproducts  .boxes{
+    width: 20%;
+    height: 46vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#fproducts .boxes h3{
+    margin-top: 5px;
+}
+
+
+
+#fproducts .top-row1 .boxes img{
+    width: 100%;
+    height: 76%;
+    border-radius: 10px;
+}
+
+#fproducts .top-row1 .boxes h3{
+    text-align: center;
+}
+
+#fproducts .bottom-row1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    color:black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#fproducts .bottom-row1 .boxes img{
+    width: 100%;
+    height: 76%;
+    border-radius: 10px;
+}
